@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidaDiaUtilBR.Tests", "ValidaDiaUtilBR.Tests\ValidaDiaUtilBR.Tests.csproj", "{54CD47B2-E818-4B72-A92E-4FD592C78A1C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidaDiaUtilBR", "ValidaDiaUtilBR\ValidaDiaUtilBR.csproj", "{4AE003E2-E6CB-4745-99C9-CD3EFBAA680A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{54CD47B2-E818-4B72-A92E-4FD592C78A1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54CD47B2-E818-4B72-A92E-4FD592C78A1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54CD47B2-E818-4B72-A92E-4FD592C78A1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54CD47B2-E818-4B72-A92E-4FD592C78A1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4AE003E2-E6CB-4745-99C9-CD3EFBAA680A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AE003E2-E6CB-4745-99C9-CD3EFBAA680A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AE003E2-E6CB-4745-99C9-CD3EFBAA680A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AE003E2-E6CB-4745-99C9-CD3EFBAA680A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D2722B67-EA65-4FBE-8DF7-1785F772245A}
+	EndGlobalSection
+EndGlobal

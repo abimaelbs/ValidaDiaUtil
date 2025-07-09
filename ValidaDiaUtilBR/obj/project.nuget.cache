@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "Xp7gEeRyztRwlNM/UrcHfVEWzvFKQ+KK8tO2az7J+6tLSt4Vd0vcwaF5TJcQpw31xdNNVqpyHSMcaIqLZDc33Q==",
+  "success": true,
+  "projectFilePath": "D:\\Projetos\\ValidaDiaUtilBR\\ValidaDiaUtilBR\\ValidaDiaUtilBR.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Abimael\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.29\\microsoft.windowsdesktop.app.ref.6.0.29.nupkg.sha512",
+    "C:\\Users\\Abimael\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.29\\microsoft.netcore.app.ref.6.0.29.nupkg.sha512",
+    "C:\\Users\\Abimael\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.29\\microsoft.aspnetcore.app.ref.6.0.29.nupkg.sha512"
+  ],
+  "logs": []
+}

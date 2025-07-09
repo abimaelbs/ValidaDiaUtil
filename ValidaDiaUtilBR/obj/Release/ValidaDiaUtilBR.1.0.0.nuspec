@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>ValidaDiaUtilBR</id>
+    <version>1.0.0</version>
+    <title>ValidaDiaUtilBR</title>
+    <authors>Abimael.Dev</authors>
+    <description>Valida se uma data é dia útil no Brasil, considerando feriados nacionais e personalizados.</description>
+    <releaseNotes>Setup</releaseNotes>
+    <tags>datas, data utils, feriados</tags>
+    <repository type="git" />
+    <dependencies>
+      <group targetFramework="net6.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="D:\Projetos\ValidaDiaUtilBR\ValidaDiaUtilBR\bin\Release\net6.0\ValidaDiaUtilBR.dll" target="lib\net6.0\ValidaDiaUtilBR.dll" />
+  </files>
+</package>

@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <!--<TargetFrameworks>netstandard2.0;net6.0</TargetFrameworks>-->
+
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>ValidaDiaUtilBR</Title>
+    <Authors>Abimael.Dev</Authors>    
+    <Description>Valida se uma data é dia útil no Brasil, considerando feriados nacionais e personalizados.</Description>
+    <PackageReleaseNotes>Setup</PackageReleaseNotes>
+    <PackageId>ValidaDiaUtilBR</PackageId>
+    <PackageTags>datas, data utils, feriados</PackageTags>
+    <Version>1.0.0</Version>
+    
+  </PropertyGroup>
+
+</Project>
