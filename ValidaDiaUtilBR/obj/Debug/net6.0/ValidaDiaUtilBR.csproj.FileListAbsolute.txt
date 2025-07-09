@@ -5,6 +5,7 @@ D:\Projetos\ValidaDiaUtilBR\ValidaDiaUtilBR\obj\Debug\net6.0\ValidaDiaUtilBR.Gen
 D:\Projetos\ValidaDiaUtilBR\ValidaDiaUtilBR\obj\Debug\net6.0\ValidaDiaUtilBR.AssemblyInfoInputs.cache
 D:\Projetos\ValidaDiaUtilBR\ValidaDiaUtilBR\obj\Debug\net6.0\ValidaDiaUtilBR.AssemblyInfo.cs
 D:\Projetos\ValidaDiaUtilBR\ValidaDiaUtilBR\obj\Debug\net6.0\ValidaDiaUtilBR.csproj.CoreCompileInputs.cache
+D:\Projetos\ValidaDiaUtilBR\ValidaDiaUtilBR\obj\Debug\net6.0\ValidaDiaUtilBR.sourcelink.json
 D:\Projetos\ValidaDiaUtilBR\ValidaDiaUtilBR\obj\Debug\net6.0\ValidaDiaUtilBR.dll
 D:\Projetos\ValidaDiaUtilBR\ValidaDiaUtilBR\obj\Debug\net6.0\refint\ValidaDiaUtilBR.dll
 D:\Projetos\ValidaDiaUtilBR\ValidaDiaUtilBR\obj\Debug\net6.0\ValidaDiaUtilBR.pdb

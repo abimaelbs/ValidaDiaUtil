@@ -8,7 +8,7 @@
     <description>Valida se uma data é dia útil no Brasil, considerando feriados nacionais e personalizados.</description>
     <releaseNotes>Setup</releaseNotes>
     <tags>datas, data utils, feriados</tags>
-    <repository type="git" />
+    <repository type="git" commit="88f561034a73b762ae058534878ed1b4eb755164" />
     <dependencies>
       <group targetFramework="net6.0" />
     </dependencies>

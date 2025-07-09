@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ValidaDiaUtilBR.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+88f561034a73b762ae058534878ed1b4eb755164")]
 [assembly: System.Reflection.AssemblyProductAttribute("ValidaDiaUtilBR.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ValidaDiaUtilBR.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -95,6 +95,7 @@ D:\Projetos\ValidaDiaUtilBR\ValidaDiaUtilBR.Tests\obj\Debug\net6.0\ValidaDiaUtil
 D:\Projetos\ValidaDiaUtilBR\ValidaDiaUtilBR.Tests\obj\Debug\net6.0\ValidaDiaUtilBR.Tests.AssemblyInfoInputs.cache
 D:\Projetos\ValidaDiaUtilBR\ValidaDiaUtilBR.Tests\obj\Debug\net6.0\ValidaDiaUtilBR.Tests.AssemblyInfo.cs
 D:\Projetos\ValidaDiaUtilBR\ValidaDiaUtilBR.Tests\obj\Debug\net6.0\ValidaDiaUtilBR.Tests.csproj.CoreCompileInputs.cache
+D:\Projetos\ValidaDiaUtilBR\ValidaDiaUtilBR.Tests\obj\Debug\net6.0\ValidaDiaUtilBR.Tests.sourcelink.json
 D:\Projetos\ValidaDiaUtilBR\ValidaDiaUtilBR.Tests\obj\Debug\net6.0\ValidaDi.0E0479D3.Up2Date
 D:\Projetos\ValidaDiaUtilBR\ValidaDiaUtilBR.Tests\obj\Debug\net6.0\ValidaDiaUtilBR.Tests.dll
 D:\Projetos\ValidaDiaUtilBR\ValidaDiaUtilBR.Tests\obj\Debug\net6.0\refint\ValidaDiaUtilBR.Tests.dll
