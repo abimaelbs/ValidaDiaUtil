@@ -3,10 +3,6 @@
 [![Nuget](https://img.shields.io/nuget/dt/ValidaDiaUtilBR)](https://www.nuget.org/packages/ValidaDiaUtilBR)
 [![Nuget](https://img.shields.io/nuget/v/ValidaDiaUtilBR)](https://www.nuget.org/packages/ValidaDiaUtilBR)
 
- Instale [este pacote](https://www.nuget.org/packages/ValidaDiaUtilBR) via nuget ou linha de comando:<br/>
-```nuget
-Install-Package ValidaDiaUtilBR
-```
 
 Uma biblioteca .NET para validação de dias úteis no Brasil, considerando finais de semana e feriados nacionais (fixos e móveis). Ideal para aplicações que precisam lidar com regras de calendário, como sistemas financeiros, fiscais ou de agendamento.
 
@@ -26,6 +22,11 @@ Uma biblioteca .NET para validação de dias úteis no Brasil, considerando fina
 ## 🚀 Instalação
 
 Você pode adicionar esta biblioteca ao seu projeto via NuGet:
+
+ Instale [este pacote](https://www.nuget.org/packages/ValidaDiaUtilBR) via nuget ou linha de comando:<br/>
+```nuget
+Install-Package ValidaDiaUtilBR
+```
 
 ```bash
 dotnet add package ValidaDiaUtilBR
@@ -91,14 +92,16 @@ DateTime anteriorUtil = validador.DiaUtilAnterior(new DateTime(2025, 1, 1));
 |--------------|-------------------------------|----------------------------------------|
 | 01/01        | Ano Novo                      | Feriado fixo                           |
 | Variável     | Carnaval                      | 47 dias antes da Páscoa                |
-| Variável     | Páscoa                        | Calculada via algoritmo Computus       |
+| Variável     | Sexta-Feira Santa             | 2 dias antes da Páscoa                 |
+| Variável     | Domingo de Páscoa             | Calculada via algoritmo Computus       |
+| Variável     | Corpus Christi                | 60 dias após a Páscoa                  |
 | 21/04        | Tiradentes                    | Feriado fixo                           |
 | 01/05        | Dia do Trabalho               | Feriado fixo                           |
 | 07/09        | Independência do Brasil       | Feriado fixo                           |
 | 12/10        | Nossa Senhora Aparecida       | Feriado fixo                           |
 | 02/11        | Finados                       | Feriado fixo                           |
 | 15/11        | Proclamação da República      | Feriado fixo                           |
-| 20/11        | Consciência Negra             | Feriado fixo (em alguns estados)       |
+| 20/11        | Consciência Negra             | Feriado fixo (nacional desde 2024)     |
 | 25/12        | Natal                         | Feriado fixo                           | 
 
 #### Você também pode adicionar feriados personalizados conforme a necessidade da sua aplicação.
