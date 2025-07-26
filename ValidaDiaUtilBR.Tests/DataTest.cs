@@ -1,9 +1,16 @@
-
 namespace ValidaDiaUtilBR.Tests
 {
+    [TestFixture]
     public class DataTest
     {        
         private readonly ValidaDiaUtil _feriados;
+
+        [SetUp]
+        public void Setup()
+        {
+            // Setup: inicializa o objeto antes de cada teste
+        }
+
         public DataTest()
         {
             _feriados = new ValidaDiaUtil(2025);
@@ -57,7 +64,7 @@ namespace ValidaDiaUtilBR.Tests
         [TestCase("2024-03-31", true)]
         public void EhFeriado_DeveReconhecerPascoaComoFeriado_Em2024(DateTime data, bool esperado)
         {
-            var validar = new ValidaDiaUtil(2024);
+            var validar = new ValidaDiaUtil(data.Year);
 
             bool resultado = validar.EhFeriado(data);
 
@@ -80,6 +87,24 @@ namespace ValidaDiaUtilBR.Tests
             var resultado = _feriados.DiaUtilAnterior(data);
 
             _feriados.EhDiaUtil(resultado).Should().Be(esperado);
+        }
+
+        [TestCase("2025-04-18", true)]
+        public void EhFeriado_DeveReconhecerDataComoSextaFeiraSanta(DateTime data, bool esperado)
+        {
+            var validar = new ValidaDiaUtil(2025);            
+
+            validar.EhFeriado(data).Should().Be(esperado);            
+        }
+
+        [TestCase("2025-06-19", true)]
+        [TestCase("2024-05-30", true)]
+        [TestCase("2024-06-19", false)]
+        public void Deve_Validar_Data_Se_CorpusChristi(DateTime data, bool esperado)
+        {            
+            var validar = new ValidaDiaUtil(data.Year);
+
+            validar.EhFeriado(data).Should().Be(esperado);                        
         }
     }
 }

@@ -9,8 +9,10 @@
         private void CarregarListaDeFeriados()
         {            
             _feriados.Add(new DateTime(_ano, 1, 1), "Ano Novo");
-            _feriados.Add(CalcularCarnaval(_ano), "Carnaval");
             _feriados.Add(CalcularPascoa(_ano), "Páscoa");
+            _feriados.Add(CalcularSextaFeiraSanta(_ano) ,"Sexta-Feira Santa");
+            _feriados.Add(CalcularCarnaval(_ano), "Carnaval");
+            _feriados.Add(CalcularCorpusChristi(_ano), "Corpus Christi");
             _feriados.Add(new DateTime(_ano, 4, 21), "Tiradentes");
             _feriados.Add(new DateTime(_ano, 5, 1), "Dia do Trabalho");
             _feriados.Add(new DateTime(_ano, 9, 7), "Independência do Brasil");
@@ -35,6 +37,18 @@
         private DateTime CalcularCarnaval(int ano)
         {
             return new DateTime(ano, 2, 25).AddDays(-47); // 47 dias antes da Páscoa
+        }
+
+        private DateTime CalcularSextaFeiraSanta(int ano)
+        {
+            var dt = CalcularPascoa(ano);
+            return dt.AddDays(-2);
+        }
+
+        private DateTime CalcularCorpusChristi(int ano)
+        {
+            var dt = CalcularPascoa(ano);
+            return dt.AddDays(60);
         }
 
         private DateTime CalcularPascoa(int ano)
