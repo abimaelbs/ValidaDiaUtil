@@ -1,5 +1,13 @@
 ﻿# 📅 ValidaDiaUtilBR
 
+[![Nuget](https://img.shields.io/nuget/dt/ValidaDiaUtilBR)](https://www.nuget.org/packages/ValidaDiaUtilBR)
+[![Nuget](https://img.shields.io/nuget/v/ValidaDiaUtilBR)](https://www.nuget.org/packages/ValidaDiaUtilBR)
+
+ Instale [este pacote](https://www.nuget.org/packages/ValidaDiaUtilBR) via nuget ou linha de comando:<br/>
+```nuget
+Install-Package ValidaDiaUtilBR
+```
+
 Uma biblioteca .NET para validação de dias úteis no Brasil, considerando finais de semana e feriados nacionais (fixos e móveis). Ideal para aplicações que precisam lidar com regras de calendário, como sistemas financeiros, fiscais ou de agendamento.
 
 ---
