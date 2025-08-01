@@ -1,15 +1,12 @@
-
 name: Publish Package
 
 on:
   push:
-    branches: [ "main" ]
-    paths-ignore:
-      - '.github/workflows/**'
+    branches: ["main", "develop"]
+    paths:
+      - "ValidaDiaUtilBR/ValidaDiaUtilBR.csproj"
   pull_request:
-    branches: [ "main" ]
-    paths-ignore:
-      - '.github/workflows/**'
+    branches: ["main", "develop"]
 
 jobs:
   validate:
