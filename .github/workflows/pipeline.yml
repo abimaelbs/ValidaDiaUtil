@@ -4,7 +4,8 @@ on:
   push:
     branches: ["main", "develop"]
     paths:
-      - "ValidaDiaUtilBR/ValidaDiaUtilBR.csproj"
+      # Só executa quando a versão for alterada neste arquivo
+      - "ValidaDiaUtilBR/ValidaDiaUtilBR.csproj" # altere a tag <Version> para publicar
   pull_request:
     branches: ["main", "develop"]
 
