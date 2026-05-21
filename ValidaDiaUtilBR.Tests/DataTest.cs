@@ -1,3 +1,7 @@
+using FluentAssertions;
+using NUnit.Framework;
+using System;
+
 namespace ValidaDiaUtilBR.Tests
 {
     [TestFixture]
@@ -11,10 +15,7 @@ namespace ValidaDiaUtilBR.Tests
             // Setup: inicializa o objeto antes de cada teste
         }
 
-        public DataTest()
-        {
-            _feriados = new ValidaDiaUtil(2025);
-        }
+        public DataTest() => _feriados = new ValidaDiaUtil(2025);
 
         [TestCase("2025-05-19", true)]
         [TestCase("2025-07-04", true)]
@@ -22,7 +23,7 @@ namespace ValidaDiaUtilBR.Tests
         public void EhDiaUtil_DeveRetornarVerdadeiro_ParaDatasUteis(DateTime data, bool esperado) 
             => _feriados.EhDiaUtil(data).Should().Be(esperado);        
 
-        [TestCase("2025-02-02", true)] // S·bado (n„o ˙til)
+        [TestCase("2025-02-02", true)] // SÔøΩbado (n√£oo √∫til)
         [TestCase("2023-01-01", true)] // Domingo Feriado (Ano Novo) 
         public void EhFinalDeSemana_DeveRetornarVerdadeiro_ParaSabadoOuDomingo(DateTime data, bool esperado) 
             => _feriados.EhFinalDeSemana(data).Should().Be(esperado);
@@ -34,7 +35,7 @@ namespace ValidaDiaUtilBR.Tests
         [TestCase("2025-01-25", false)]
         public void AdicionarFeriado_DeveMarcarDataComoNaoUtil(DateTime data, bool esperado)
         {
-            _feriados.AdicionarFeriado(data, "Anivers·rio de S„o Paulo");
+            _feriados.AdicionarFeriado(data, "Anivers√°rio de S√£o Paulo");
 
             _feriados.EhDiaUtil(data).Should().Be(esperado);            
         }
@@ -42,18 +43,8 @@ namespace ValidaDiaUtilBR.Tests
         [TestCase("2025-01-25", true)]
         public void AdicionarFeriado_DeveReconhecerDataComoFeriadoComDescricao(DateTime data, bool esperado)
         {
-            _feriados.AdicionarFeriado(data, "Anivers·rio de S„o Paulo");
+            _feriados.AdicionarFeriado(data, "Anivers√°rio de S√£o Paulo");
 
-            bool resultado = _feriados.EhFeriado(data);
-
-            var desc = _feriados.DescricaoFeriado(data);
-
-            Assert.AreEqual(esperado, resultado);
-        }
-       
-        [TestCase("2025-04-20", true)]        
-        public void EhFeriado_DeveReconhecerPascoaComoFeriado(DateTime data, bool esperado)
-        { 
             bool resultado = _feriados.EhFeriado(data);
 
             var desc = _feriados.DescricaoFeriado(data);
@@ -62,13 +53,13 @@ namespace ValidaDiaUtilBR.Tests
         }
 
         [TestCase("2024-03-31", true)]
-        public void EhFeriado_DeveReconhecerPascoaComoFeriado_Em2024(DateTime data, bool esperado)
+        [TestCase("2025-04-20", true)]
+        [TestCase("2026-04-5", true)]
+        public void EhFeriado_DeveReconhecerPascoaComoFeriado(DateTime data, bool esperado)
         {
             var validar = new ValidaDiaUtil(data.Year);
 
             bool resultado = validar.EhFeriado(data);
-
-            var desc = validar.DescricaoFeriado(data);
 
             Assert.AreEqual(esperado, resultado);
         }
